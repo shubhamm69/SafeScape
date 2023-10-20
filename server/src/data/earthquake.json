@@ -1,0 +1,29 @@
+{
+    "disasterType": "Earthquake",
+    "description": "An earthquake is the shaking of the surface of the Earth resulting from a sudden release of energy in the Earth's lithosphere that creates seismic waves.",
+    "causes": "Earthquakes can be caused by tectonic plate movements, volcanic activity, landslides, and human activities (e.g., mining and reservoir-induced seismicity).",
+    "safetyTips": [
+        "Drop to the ground, take cover, and hold on to something sturdy, such as a table or desk.",
+        "Stay away from windows, glass, and exterior walls to avoid flying debris.",
+        "If you are in bed, stay there, and protect your head with a pillow.",
+        "If you are outdoors, move to an open area away from buildings, streetlights, and utility wires.",
+        "If you are driving, pull over to a safe location, away from overpasses, bridges, and buildings. Stay inside the vehicle until the shaking stops.",
+        "After the shaking stops, be prepared for aftershocks. Check yourself and others for injuries, and administer first aid if necessary.",
+        "If you are trapped, use a whistle, your cell phone, or tap on a hard surface to alert rescuers to your location.",
+        "Listen to emergency broadcasts and follow the instructions of local authorities for evacuation and safety."
+    ],
+    "emergencyContacts": [
+        {
+            "type": "Emergency Services",
+            "number": "911"
+        },
+        {
+            "type": "Red Cross",
+            "number": "1-800-RED-CROSS"
+        },
+        {
+            "type": "Local Fire Department",
+            "number": "Your local fire department's contact number"
+        }
+    ]
+}
