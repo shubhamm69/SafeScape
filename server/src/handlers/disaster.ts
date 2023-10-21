@@ -45,7 +45,6 @@ const getDisasterByType = async (req: Request, res: Response) => {
       where: {
         disasterType: {
           equals: type,
-          mode: "insensitive",
         },
       },
       include: {
@@ -123,7 +122,7 @@ const updateDisaster = async (req: Request, res: Response) => {
               },
             });
           }
-        })
+        }),
       );
     }
 

@@ -15,7 +15,6 @@ app.get("/", (req: Request, res: Response) => {
   res.json({ message: "Hello" });
 });
 
-
 app.use("/api", disasterRouter);
 
 export default app;
