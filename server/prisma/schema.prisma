@@ -1,12 +1,10 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
+  // provider = "sqlite" // uncomment to use sqlite for local development
+  provider = "postgresql" // uncomment to use postgresql for production
   url      = env("DATABASE_URL")
 }
 
@@ -18,14 +16,15 @@ model User {
   updatedAt DateTime @updatedAt
 }
 
-  model Disaster {
-    id                String             @id @default(uuid())
-    disasterType      String
-    description       String
-    causes            String
-    safetyTips        String
-    emergencyContacts EmergencyContact[]
-  }
+model Disaster {
+  id                String             @id @default(uuid())
+  disasterType      String
+  description       String
+  causes            String
+  // safetyTips        String // for local devlopment when using sqlite
+  safetyTips        String[]
+  emergencyContacts EmergencyContact[]
+}
 
 model EmergencyContact {
   id         String   @id @default(uuid())

@@ -1,5 +1,4 @@
-import { Request, Response, Router } from "express";
-import earthquakeData from "../data/earthquake.json";
+import { Router } from "express";
 import {
   createDisasters,
   deleteDisaster,
