@@ -1,6 +1,6 @@
 # SafeScape - Disaster Preparedness & Alerts
 
-![SafeScape Logo](link_to_logo)
+![SafeScape Logo](./client/assets/logo.png)
 
 ## Table of Contents
 
@@ -18,6 +18,7 @@
   - [Additional details](#additional-details)
     - [Authors](#authors)
     - [License](#license)
+  - [Screen Shots](#screen-shots)
 
 ## Introduction
 
@@ -159,3 +160,9 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 ### License
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
+
+## Screen Shots
+
+![SafeScape Screenshot 1](./client/assets/screenshots/1.png)
+![SafeScape Screenshot 2](./client/assets/screenshots/2.png)
+![SafeScape Screenshot 3](./client/assets/screenshots/3.png)
