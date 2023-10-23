@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "AC-Final-Project",
-    "slug": "AC-Final-Project",
+    "name": "SafeScape",
+    "slug": "SafeScape",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
