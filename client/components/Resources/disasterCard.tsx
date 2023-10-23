@@ -1,11 +1,10 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-
 const DisasterCard: React.FC<{ data: DisasterData }> = ({ data }) => {
   return (
     <View style={styles.card}>
-      <Text>{data.disasterType}</Text>
+      <Text style={styles.disasterType}>{data.disasterType}</Text>
       <Text style={styles.description}>{data.description}</Text>
     </View>
   );
@@ -14,14 +13,14 @@ const DisasterCard: React.FC<{ data: DisasterData }> = ({ data }) => {
 const styles = StyleSheet.create({
   card: {
     backgroundColor: "#ffffff",
-    borderRadius: 8,
+    borderRadius: 12,
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 2,
+      height: 3,
     },
     shadowOpacity: 0.3,
-    shadowRadius: 3.84,
+    shadowRadius: 4,
     elevation: 5,
     padding: 16,
     margin: 16,
@@ -30,9 +29,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "bold",
     marginBottom: 8,
+    color: "#333",
   },
   description: {
     fontSize: 16,
+    color: "#666",
   },
 });
 

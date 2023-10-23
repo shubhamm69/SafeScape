@@ -2,8 +2,8 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { HomeStackNavigator, ResourcesStackNavigator } from "./StackNavigator";
 import { MaterialIcons } from "@expo/vector-icons";
-import ProfileScreen from "../screens/ProfileScreen";
-import AlertScreen from "../screens/AlertScreen";
+import ProfileScreen from "../screens/Profile/ProfileScreen";
+import AlertScreen from "../screens/Alert/AlertScreen";
 
 const Tab = createBottomTabNavigator();
 
