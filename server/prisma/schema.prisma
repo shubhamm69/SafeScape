@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  // provider = "sqlite" // uncomment to use sqlite for local development
-  provider = "postgresql" // uncomment to use postgresql for production
+  provider = "sqlite" // uncomment to use sqlite for local development
+  // provider = "postgresql" // uncomment to use postgresql for production
   url      = env("DATABASE_URL")
 }
 
@@ -21,8 +21,8 @@ model Disaster {
   disasterType      String
   description       String
   causes            String
-  // safetyTips        String // for local devlopment when using sqlite
-  safetyTips        String[]
+  safetyTips        String // for local devlopment when using sqlite
+  // safetyTips        String[] // for production when using postgresql
   emergencyContacts EmergencyContact[]
 }
 
