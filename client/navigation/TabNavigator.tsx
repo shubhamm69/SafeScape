@@ -1,8 +1,7 @@
 import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { StackNavigator } from "./StackNavigator";
+import { HomeStackNavigator, ResourcesStackNavigator } from "./StackNavigator";
 import { MaterialIcons } from "@expo/vector-icons";
-import ResourcesScreen from "../screens/ResourcesScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import AlertScreen from "../screens/AlertScreen";
 
@@ -13,7 +12,7 @@ export function TabNavigator() {
     <Tab.Navigator initialRouteName="Home">
       <Tab.Screen
         name="Home"
-        component={StackNavigator}
+        component={HomeStackNavigator}
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color }) => (
@@ -23,7 +22,7 @@ export function TabNavigator() {
       />
       <Tab.Screen
         name="Resources"
-        component={ResourcesScreen}
+        component={ResourcesStackNavigator}
         options={{
           tabBarLabel: "Resources",
           tabBarIcon: ({ color }) => (

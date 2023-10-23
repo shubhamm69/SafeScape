@@ -1,7 +1,9 @@
+// screens/ResourceScreen.tsx
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, FlatList } from "react-native";
+import { View, Text, StyleSheet, FlatList, Pressable } from "react-native";
 import axios from "axios";
-import DisasterCard from "../components/Resources/disasterCard";
+import DisasterCard from "../../components/Resources/disasterCard";
+import { NavigationProp } from "@react-navigation/native";
 
 interface DisasterData {
   id: string;
@@ -16,8 +18,10 @@ interface DisasterData {
     disasterId: string;
   }[];
 }
-
-function ResourcesScreen() {
+interface ResourcesScreenProps {
+  navigation: NavigationProp<any>;
+}
+function ResourcesScreen({ navigation }: ResourcesScreenProps) {
   const [data, setData] = useState<DisasterData[]>([]);
   useEffect(() => {
     axios
@@ -29,15 +33,25 @@ function ResourcesScreen() {
         setData([]);
       });
   }, []);
-
-  console.log(data);
   return (
     <View style={styles.container}>
-      <FlatList
-        data={data}
-        keyExtractor={(item) => item.id}
-        renderItem={({ item }) => <DisasterCard data={item} />}
-      />
+      {data.length > 0 ? (
+        <FlatList
+          data={data}
+          keyExtractor={(item) => item.id}
+          renderItem={({ item }) => (
+            <Pressable
+              onPress={() =>
+                navigation.navigate("DisasterStackScreen", { disaster: item })
+              }
+            >
+              <DisasterCard data={item} />
+            </Pressable>
+          )}
+        />
+      ) : (
+        <Text>Loading...</Text>
+      )}
     </View>
   );
 }

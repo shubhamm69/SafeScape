@@ -1,11 +1,12 @@
+// screens/HomeScreen.tsx
 import React from "react";
 import {
   View,
   Text,
   Image,
   StyleSheet,
-  TouchableOpacity,
   FlatList,
+  Pressable,
 } from "react-native";
 import { NavigationProp } from "@react-navigation/native";
 
@@ -43,14 +44,14 @@ const menuItems: MenuItem[] = [
 
 function HomeScreen({ navigation }: HomeScreenProps) {
   const renderItem = ({ item }: { item: MenuItem }) => (
-    <TouchableOpacity
+    <Pressable
       style={styles.menuItem}
       onPress={() => navigation.navigate(item.title)}
     >
       <Image source={item.image} style={styles.menuItemImage} />
       <Text style={styles.menuItemTitle}>{item.title}</Text>
       <Text style={styles.menuItemSubtitle}>{item.subtitle}</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 
   return (

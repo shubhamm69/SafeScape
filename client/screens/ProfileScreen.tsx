@@ -1,4 +1,4 @@
-// screens/ProfileScreen.js
+// screens/ProfileScreen.tsx
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 

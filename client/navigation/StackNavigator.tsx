@@ -1,21 +1,35 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import HomeScreen from "../screens/HomeScreen";
-import ResourcesScreen from "../screens/ResourcesScreen";
+import ResourcesScreen from "../screens/Resources/ResourcesScreen";
+import DisasterScreen from "../screens/Resources/DisasterScreen";
 
-const HomeResourcesStack = createStackNavigator();
+const HomeStack = createStackNavigator();
+const ResourcesStack = createStackNavigator();
 
-export function StackNavigator() {
+export function HomeStackNavigator() {
   return (
-    <HomeResourcesStack.Navigator screenOptions={{ headerShown: false }}>
-      <HomeResourcesStack.Screen
-        name="HomeStackScreen"
-        component={HomeScreen}
-      />
-      <HomeResourcesStack.Screen
+    <HomeStack.Navigator screenOptions={{ headerShown: false }}>
+      <HomeStack.Screen name="HomeStackScreen" component={HomeScreen} />
+      <HomeStack.Screen
         name="ResourcesStackScreen"
         component={ResourcesScreen}
       />
-    </HomeResourcesStack.Navigator>
+    </HomeStack.Navigator>
+  );
+}
+
+export function ResourcesStackNavigator() {
+  return (
+    <ResourcesStack.Navigator screenOptions={{ headerShown: false }}>
+      <ResourcesStack.Screen
+        name="ResourcesStackScreen"
+        component={ResourcesScreen}
+      />
+      <ResourcesStack.Screen
+        name="DisasterStackScreen"
+        component={DisasterScreen}
+      />
+    </ResourcesStack.Navigator>
   );
 }
