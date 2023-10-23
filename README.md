@@ -112,10 +112,13 @@ Follow the steps below to get a copy of the project up and running on your local
 4. To start the application, run the following command:
 
    ```
-   npx expo start
+   npm start
    ```
 
-5. Scan the QR with your phone and start using the app
+5. Press `w` to run on the web emulator or, you can directly start expo web app using:
+   ```
+   npm run web
+   ```
 
 ### Server
 
