@@ -1,6 +1,6 @@
 # SafeScape - Disaster Preparedness & Alerts
 
-![SafeScape Logo](./client/assets/logo.png)
+![SafeScape Logo](https://github.com/shubhamm69/SafeScape/assets/109853624/4a93cb8e-069b-4054-80d6-8c3203a3130d)
 
 ## Table of Contents
 
@@ -162,7 +162,6 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduc
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
 
 ## Screen Shots
-
-![SafeScape Screenshot 1](./client/assets/screenshots/1.png)
-![SafeScape Screenshot 2](./client/assets/screenshots/2.png)
-![SafeScape Screenshot 3](./client/assets/screenshots/3.png)
+<img width="300" alt="Screenshot 2023-10-24 at 12 01 15 AM" src="https://github.com/shubhamm69/SafeScape/assets/109853624/ba09a6bf-6d32-4b1e-bd2f-5265186866de">
+<img width="300" alt="Screenshot 2023-10-24 at 12 01 34 AM" src="https://github.com/shubhamm69/SafeScape/assets/109853624/25585ecf-72c7-455c-9e41-0e00fea718c0">
+<img width="300" alt="Screenshot 2023-10-24 at 12 01 42 AM" src="https://github.com/shubhamm69/SafeScape/assets/109853624/e8cd413b-b276-46c9-84b0-295c4a29fdb1">
