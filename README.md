@@ -10,10 +10,14 @@
   - [Features](#features)
   - [Getting Started](#getting-started)
     - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-  - [Usage](#usage)
+    - [How to run the project](#how-to-run-the-project)
+    - [App](#app)
+    - [Server](#server)
   - [Contributing](#contributing)
-  - [License](#license)
+    - [How to Contribute](#how-to-contribute)
+  - [Additional details](#additional-details)
+    - [Authors](#authors)
+    - [License](#license)
 
 ## Introduction
 
@@ -63,32 +67,95 @@ SafeScape offers the following key features:
 
 ### Prerequisites
 
-Before you begin, ensure you have met the following requirements:
+Before you begin contributing to the project, make sure you have the following installed:
 
-- [List any prerequisites here, e.g., Node.js, npm, Xcode, Android Studio]
+- [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)
+- A modern code editor like [Visual Studio Code](https://code.visualstudio.com/)
 
-### Installation
+### How to run the project
 
-To install SafeScape, follow these steps:
+This repository contains two main components:
 
-1. [Installation step 1]
-2. [Installation step 2]
-3. ...
+- **Client**: The frontend application (Expo + TypeScript + Tailwind).
+- **Server**: The backend server (Prisma + Sqlite).
 
-[Include detailed installation instructions here.]
+Follow the steps below to get a copy of the project up and running on your local machine:
 
-## Usage
+1. Fork and clone this repository.
 
-To use SafeScape, [provide instructions on how to use the app, including how to set up alerts, create emergency plans, and access educational resources].
+   ```
+   git clone https://github.com/shubhamm69/SafeScape
+   ```
+
+2. Navigate to the project directory.
+
+   ```
+   cd SafeScape
+   ```
+
+### App
+
+1. Open your terminal.
+2. Navigate to the `app` directory using the `cd` command:
+
+   ```
+   cd client
+   ```
+
+3. Install the necessary dependencies using your package manager of choice (npm, yarn, pnpm or bun):
+
+   ```
+   npm i
+   ```
+
+4. To start the application, run the following command:
+
+   ```
+   npx expo start
+   ```
+
+5. Scan the QR with your phone and start using the app
+
+### Server
+
+1. Open your terminal.
+
+2. Navigate to the `server` directory using the `cd` command:
+
+   ```
+   cd server
+   ```
+
+3. Install the necessary server dependencies using your package manager of choice (npm, yarn, pnpm or bun):
+
+   ```
+   npm i
+   ```
+
+4. To start the server, run the following command:
+   ```
+   npm run dev
+   ```
+
+The local server will be up and running on `http://localhost:3000`.
 
 ## Contributing
 
-Contributions are welcome! Please follow these guidelines when contributing to the project:
+We welcome contributions from the open-source community!
+By contributing, you can help us improve the SafeScape Applciation.
 
-- [Include guidelines for contributions, such as coding standards, issue reporting, and pull request procedures.]
+### How to Contribute
 
-## License
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-This project is licensed under the [License Name] License - see the [LICENSE](LICENSE) file for details.
+## Additional details
 
-[Include the appropriate license information and a link to the full license text.]
+### Authors
+
+<a href="https://github.com/shubhamm69/SafeScape/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=shubhamm69/SafeScape" />
+</a>
+
+### License
+
+This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
